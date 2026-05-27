@@ -1,0 +1,40 @@
+/* Apple Minimalist Theme */
+
+:root {
+  /* Colors */
+  --color-bg: hsl(0, 0%, 98%);      /* Clean white background */
+  --color-card: hsl(0, 0%, 100%);   /* Pure white card */
+  --color-primary: hsl(24.6, 95%, 53%); /* Warm orange */
+
+  /* Border radius */
+  --radius: 1.25rem;
+}
+
+/* Global reset / base */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Card style example */
+.card {
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+/* Utility classes */
+.ios-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius);
+}
+
+.ios-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08),
+              0 6px 6px rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius);
+}
